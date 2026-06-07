@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café Jasmin | L'Essence de Tunis</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="logo">Café <span>Jasmin</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#menu">La Carte</a></li>
+            <li><a href="#reviews">Avis</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="reveal">Une parenthèse fleurie au cœur de Tunis.</h1>
+            <p class="reveal">Café de spécialité, pâtisseries fines et l'hospitalité tunisienne authentique.</p>
+            <a href="https://wa.me/21699000000" class="btn-primary reveal"><i class="fab fa-whatsapp"></i> Réserver une table</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="container">
+        <div class="about-grid">
+            <div class="about-text reveal">
+                <h2>Notre Histoire</h2>
+                <p>Né d'une passion pour le jasmin et l'art de vivre tunisois, Café Jasmin est un refuge urbain où tradition et modernité se rencontrent. Que ce soit pour un <i>Capucin</i> matinal ou un thé à la menthe pignon en fin de journée, nous cultivons l'excellence.</p>
+            </div>
+            <div class="about-img reveal">
+                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&q=80&w=800" alt="Intérieur moderne café">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="bg-light">
+        <div class="container">
+            <h2 class="text-center">Notre Carte</h2>
+            <div class="menu-tabs">
+                <button class="tab-btn active" onclick="filterMenu('boissons')">Boissons</button>
+                <button class="tab-btn" onclick="filterMenu('gourmandises')">Gourmandises</button>
+            </div>
+            <div class="menu-grid" id="menu-content">
+                <!-- Boissons (Default) -->
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Direct (Café au lait)</h3>
+                        <p>L'incontournable classique tunisien.</p>
+                    </div>
+                    <span class="price">3.200 DT</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Thé à la Menthe & Pignons</h3>
+                        <p>Thé vert infusé à la menthe fraîche.</p>
+                    </div>
+                    <span class="price">4.500 DT</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Citronnade Maison</h3>
+                        <p>Fraîchement pressée à la mode sfaxienne.</p>
+                    </div>
+                    <span class="price">5.500 DT</span>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-info">
+                        <h3>Café Jasmin Signature</h3>
+                        <p>Latte floral aux notes de fleur d'oranger.</p>
+                    </div>
+                    <span class="price">6.800 DT</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="container">
+        <h2 class="text-center">Ce que disent nos clients</h2>
+        <div class="reviews-slider">
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Le meilleur Capucin du quartier. L'ambiance est calme et parfaite pour travailler."</p>
+                <span>- Amine R.</span>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>"Un accueil chaleureux et une décoration magnifique. La citronnade est incroyable !"</p>
+                <span>- Myriam B.</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Map -->
+    <section id="contact" class="bg-dark">
+        <div class="container contact-flex">
+            <div class="contact-info">
+                <h2>Nous Trouver</h2>
+                <p><i class="fas fa-map-marker-alt"></i> 12 Avenue Habib Bourguiba, Tunis</p>
+                <p><i class="fas fa-phone"></i> +216 71 000 000</p>
+                <p><i class="fas fa-clock"></i> Lun - Dim: 07:00 - 22:00</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="map-container">
+                <!-- Placeholder for Google Maps -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3194.382343717146!2d10.1793582!3d36.7997426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12fd34125d0c7f13%3A0x6b44a3717b12d593!2sTunis!5e0!3m2!1sfr!2stn!4v1700000000000" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <p>&copy; 2026 Café Jasmin Tunis. Design par <a href="#">ModernWeb TN</a></p>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/21699000000" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
